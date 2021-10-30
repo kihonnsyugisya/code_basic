@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import "../reset/reset";
+@import "../config/config";
+@import "../../style";
+
+
+.work{
+  text-align: left;
+  @extend.wraper;
+  &-inner{
+    max-width: 70%;
+    padding: 0 20px;
+    margin: 0 auto;
+    @include sm{
+      max-width:100%;
+    }
+  }
+  &-tb{
+    padding-bottom: 50px;
+    @include sm{
+      text-align: center;
+    }
+  }
+  &-tit{
+    @extend.font-tit;
+  }
+  &-text{
+    @extend.font-text;
+    margin: 0;
+    word-break: break-word;
+    @include sm{
+      font-size: 0.7rem;
+    }
+  }
+  &-img{
+    max-width: 80%;
+    margin: 0 auto 70px auto;
+    text-align: center;
+    a{
+      display: inline-block;
+    }
+    img{
+      box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+      border-radius: .25rem;
+    }
+  }
+  tr{
+    height: 60px;
+    @include sm{
+      height: 80px;
+    }
+  }
+  th{
+    vertical-align: middle !important;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    min-width: 80px;
+    @include sm{
+      font-size: 0.7rem;
+      width: 25%;
+      padding: 0.3rem !important;
+    }
+  }
+  td{
+    vertical-align: middle !important;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    @include sm{
+      font-size: 0.7rem;
+      padding: 0.2rem !important;
+      font-weight: 600;
+    }
+  }
+  }
+
+  .page{
+    padding-bottom: 60px;
+    .pagination{
+      justify-content: center;
+    }
+    &-item{
+      a{
+        color: black !important;
+      }
+    } 
+
+    &-link{
+      @include sp{
+        padding: .45rem 0.7rem !important;
+      }
+      &:focus{
+          box-shadow: 0 0 0 0.1rem #F0F1F2 !important;
+      }
+      }
+    }
+  .action a{
+    z-index: 1;
+    background-color: #F0F1F2 !important;
+    border-color: #F0F1F2 !important;
+  }

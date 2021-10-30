@@ -1,0 +1,1070 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.inner {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-md-4 {
+  margin-bottom: 10px;
+}
+
+.wraper, .about, .ser, .flow, .works, .contact, .work {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.btn-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-box .btnn {
+  display: inline-block;
+  border: 2px solid #000;
+  font-size: 25px;
+  font-family: "Roboto";
+  padding: 20px 40px;
+  border-radius: initial !important;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-box .btnn:hover {
+  color: white;
+  background-color: black;
+}
+
+.font-h2, .about-tit, .ser-tit, .flow-tit, .works-tit, .contact-tit {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.31em;
+  line-height: 1.4;
+  margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 575px) {
+  .font-h2, .about-tit, .ser-tit, .flow-tit, .works-tit, .contact-tit {
+    letter-spacing: 0.2em !important;
+  }
+}
+
+.font-catch, .fv-text_catch, .ser-catch, .ser-box .text, .ser-box_card .text, .ser-box .text_v2, .ser-box_card .text_v2, .flow-catch, .works-catch, .contact-tb {
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+.font-tit, .ser .card-title, .ser-box .tit, .ser-box_card .tit, .flow-item_tit, .work-tit {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin: 0px 0px 20px 0px;
+}
+
+.font-text_v2, .fv-logo_sub, .fv-text, .about-text_v2, .ser-catch_v2 {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+}
+
+.font-text, .ser .card-text, .flow-item_text, .works-item_text, .work-text {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  margin: 0px 0px 20px 0px;
+  text-align: left;
+}
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.inner {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-md-4 {
+  margin-bottom: 10px;
+}
+
+.wraper, .about, .ser, .flow, .works, .contact, .work {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.btn-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-box .btnn {
+  display: inline-block;
+  border: 2px solid #000;
+  font-size: 25px;
+  font-family: "Roboto";
+  padding: 20px 40px;
+  border-radius: initial !important;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-box .btnn:hover {
+  color: white;
+  background-color: black;
+}
+
+.font-h2, .about-tit, .ser-tit, .flow-tit, .works-tit, .contact-tit {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.31em;
+  line-height: 1.4;
+  margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 575px) {
+  .font-h2, .about-tit, .ser-tit, .flow-tit, .works-tit, .contact-tit {
+    letter-spacing: 0.2em !important;
+  }
+}
+
+.font-catch, .fv-text_catch, .ser-catch, .ser-box .text, .ser-box_card .text, .ser-box .text_v2, .ser-box_card .text_v2, .flow-catch, .works-catch, .contact-tb {
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+.font-tit, .ser .card-title, .ser-box .tit, .ser-box_card .tit, .flow-item_tit, .work-tit {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin: 0px 0px 20px 0px;
+}
+
+.font-text_v2, .fv-logo_sub, .fv-text, .about-text_v2, .ser-catch_v2 {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+}
+
+.font-text, .ser .card-text, .flow-item_text, .works-item_text, .work-text {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  margin: 0px 0px 20px 0px;
+  text-align: left;
+}
+
+.header {
+  width: 100%;
+}
+
+.nav {
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    padding: 0 !important;
+  }
+}
+
+.nav-logo a {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-item_cc {
+  background-color: black;
+}
+
+.nav-item_cc p {
+  color: white !important;
+}
+
+.nav-link {
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-link p {
+  line-height: 1.5;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.menu-btn {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media (min-width: 576px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn span {
+  color: black;
+  font-size: 15px;
+}
+
+.menu-btn span:after {
+  content: attr(data-txt-menu);
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu-btn span:after {
+  content: attr(data-txt-close) "";
+}
+
+.menu {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu ul {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0;
+}
+
+.menu li {
+  list-style: none;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu li a {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+
+.menu li a:hover {
+  color: #999;
+}
+
+/* 開閉用ボタンがクリックされた時のスタイル */
+.open .menu {
+  cursor: url(../images/cross.svg), auto;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.fv {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .fv {
+    padding-top: 50px;
+  }
+}
+
+.fv-text_catch {
+  padding-left: 250px;
+}
+
+@media (max-width: 1199px) {
+  .fv-text_catch {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .fv-text_catch {
+    font-size: 1.2rem !important;
+  }
+}
+
+.fv-text_sub {
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 250px;
+}
+
+@media (max-width: 1199px) {
+  .fv-text_sub {
+    padding-left: 0;
+  }
+}
+
+.fv-tb {
+  position: relative;
+  background-color: #F0F1F2;
+  margin: 140px 0 0 0;
+  padding: 85px 20px;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .fv-tb {
+    margin: 90px 0 0 0;
+  }
+}
+
+.fv-tb_logo {
+  position: absolute;
+  top: -85px;
+  left: 250px;
+}
+
+@media (max-width: 991px) {
+  .fv-tb_logo {
+    top: -35px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .fv-tb_logo {
+    left: 0;
+  }
+}
+
+.fv-logo {
+  font-family: "Roboto";
+  font-weight: 900;
+  line-height: 1.4;
+  font-size: 150px;
+  line-height: 1em;
+}
+
+@media (max-width: 991px) {
+  .fv-logo {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .fv-logo {
+    font-size: 55px;
+  }
+}
+
+.about-tb {
+  min-height: 180px;
+}
+
+@media (max-width: 575px) {
+  .about-tb {
+    text-align: initial;
+  }
+}
+
+.ser-catch {
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+
+.ser-catch_v2 {
+  margin-bottom: 30px;
+}
+
+.ser .card {
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+  border-radius: .25rem;
+  height: 100%;
+}
+
+.ser .card-img-top {
+  height: auto;
+  width: 50%;
+  margin: 8px auto;
+}
+
+.ser .card-title {
+  height: 30%;
+}
+
+.ser-box, .ser-box_card {
+  text-align: left;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  padding: 30px 35px;
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 767px) {
+  .ser-box, .ser-box_card {
+    padding: 13px;
+  }
+}
+
+.ser-box_card {
+  width: 49%;
+}
+
+.ser-box_card:first-child {
+  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .ser-box_card {
+    margin: 15px 0;
+    width: 100%;
+  }
+}
+
+.ser-box_text {
+  width: 100%;
+  text-align: left;
+}
+
+.ser-box .text, .ser-box_card .text {
+  font-size: 18px;
+  margin-bottom: 20px !important;
+}
+
+.ser-box .text_v2, .ser-box_card .text_v2 {
+  font-size: 15px;
+  margin-bottom: 10px !important;
+}
+
+.ser-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .ser-card {
+    display: block;
+  }
+}
+
+table {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .tr {
+    display: block;
+    border: 2px solid #dee2e6;
+    margin-bottom: 15px;
+  }
+}
+
+.th {
+  width: 25%;
+  border: 1px solid #dee2e6;
+  padding: 1.4rem !important;
+  font-size: 1.3rem;
+  min-height: 45px;
+  vertical-align: middle !important;
+}
+
+@media (max-width: 767px) {
+  .th {
+    padding: 12px !important;
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    font-size: 0.9rem;
+    border-right: 1px solid #dee2e6 !important;
+    border-bottom: 0 !important;
+    border-left: 0  !important;
+    border-top: 0 !important;
+  }
+}
+
+.text_price {
+  font-weight: 700;
+  text-align: center;
+  width: 25%;
+  border: 1px solid #dee2e6;
+  font-size: 1.3rem;
+  vertical-align: middle !important;
+}
+
+@media (max-width: 767px) {
+  .text_price {
+    font-weight: 300;
+    display: inline-block;
+    border: 0 !important;
+    width: 48%;
+    padding: 12px !important;
+  }
+}
+
+.text_details {
+  vertical-align: middle !important;
+  border: 1px solid #dee2e6;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 400px;
+}
+
+@media (max-width: 1199px) {
+  .text_details {
+    width: 200px;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .text_details {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    font-size: 0.9rem;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0  !important;
+    border-top: 1 !important;
+    padding: 5px !important;
+  }
+}
+
+.flow-catch {
+  margin-bottom: 25px;
+}
+
+.flow-box .col-md-4 {
+  padding: 15px;
+}
+
+.flow-item {
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 50％;
+  height: 100%;
+}
+
+.flow-item_img {
+  height: auto;
+  width: 50%;
+  margin: 8px auto;
+}
+
+.flow-item_tb {
+  padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+  .flow-item_tb {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .flow-item_tit {
+    font-size: 1.4em;
+  }
+}
+
+.works-catch {
+  margin-bottom: 25px;
+}
+
+.works-box .col-md-3 {
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+  border-radius: .25rem;
+  padding: 15px;
+  margin: 15px;
+}
+
+.works-item_img {
+  margin-bottom: 20px;
+}
+
+.works-item_img a {
+  display: inline-block;
+}
+
+.works-item_text {
+  margin: 0;
+  text-align: center;
+}
+
+.works a {
+  color: #000000;
+}
+
+.contact-tb {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background: #210e03;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer span {
+  display: block;
+  font-family: YuGothic-Light;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  color: #fefefe;
+}
+
+.work {
+  text-align: left;
+}
+
+.work-inner {
+  max-width: 70%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .work-inner {
+    max-width: 100%;
+  }
+}
+
+.work-tb {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .work-tb {
+    text-align: center;
+  }
+}
+
+.work-text {
+  margin: 0;
+  word-break: break-word;
+}
+
+@media (max-width: 767px) {
+  .work-text {
+    font-size: 0.7rem;
+  }
+}
+
+.work-img {
+  max-width: 80%;
+  margin: 0 auto 70px auto;
+  text-align: center;
+}
+
+.work-img a {
+  display: inline-block;
+}
+
+.work-img img {
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.14);
+  border-radius: .25rem;
+}
+
+.work tr {
+  height: 60px;
+}
+
+@media (max-width: 767px) {
+  .work tr {
+    height: 80px;
+  }
+}
+
+.work th {
+  vertical-align: middle !important;
+  text-align: left;
+  border: 1px solid #dee2e6;
+  min-width: 80px;
+}
+
+@media (max-width: 767px) {
+  .work th {
+    font-size: 0.7rem;
+    width: 25%;
+    padding: 0.3rem !important;
+  }
+}
+
+.work td {
+  vertical-align: middle !important;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+@media (max-width: 767px) {
+  .work td {
+    font-size: 0.7rem;
+    padding: 0.2rem !important;
+    font-weight: 600;
+  }
+}
+
+.page {
+  padding-bottom: 60px;
+}
+
+.page .pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-item a {
+  color: black !important;
+}
+
+@media (max-width: 575px) {
+  .page-link {
+    padding: .45rem 0.7rem !important;
+  }
+}
+
+.page-link:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem #F0F1F2 !important;
+          box-shadow: 0 0 0 0.1rem #F0F1F2 !important;
+}
+
+.action a {
+  z-index: 1;
+  background-color: #F0F1F2 !important;
+  border-color: #F0F1F2 !important;
+}
+/*# sourceMappingURL=work.css.map */

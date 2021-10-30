@@ -1,0 +1,147 @@
+$sp: 575px; // スマホ（縦）
+$sm: 767px; // スマホ（横）
+$md: 991px;  // タブレット
+$lg: 1199px;  // デスクトップ
+
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: ($lg)) {
+    @content;
+  }
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+
+img{
+  max-width:100%;
+  vertical-align:bottom;
+}
+
+.inner{
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row{
+  margin: 0;
+}
+
+.col-md-4{
+  margin-bottom: 10px;
+}
+
+.wraper{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.btn-box{
+  text-align: center;
+  margin-bottom: 20px;
+  .btnn{
+    display: inline-block;
+    border: 2px solid #000;
+    font-size: 25px;
+    font-family: "Roboto";
+    padding: 20px 40px;
+    border-radius: initial !important;
+    color: black;
+    text-decoration: none;
+  }
+  .btnn:hover{
+    color: white;
+    background-color:black;
+  }
+}
+
+// font
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.font-h2{
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.31em;
+  @include sp{
+    letter-spacing: 0.2em !important;
+  }
+  line-height: 1.4;
+  margin: 0px 0px 50px 0px;
+}
+
+.font-catch{
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+.font-tit{
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin: 0px 0px 20px 0px;
+}
+
+.font-text_v2{
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+}
+
+.font-text{
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  margin: 0px 0px 20px 0px;
+  text-align: left;
+}
+
+
+
+
